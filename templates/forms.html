@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Rappi - Vales Refeição</title>
+  </head>
+  <body>
+    <font face="Poppins" size="5px" color="#FF7A59">Preencha as informações abaixo:</font>
+    <br>
+    <br>
+    <form action="/results" method="POST">
+    {{form.restName.label}} {{form.restName}}
+    <br>
+    <br>
+    {{form.cnpj.label}} {{form.cnpj}}
+    <hr>
+    <p>Informações do Proprietário</p>
+    <br>
+    {{form.ownerName.label}} {{form.ownerName}}
+    {{form.ownerPhone.label}} {{form.ownerPhone}}
+    <br>
+    <br>
+    <hr>
+    {{form.button}}
+
+
+  </form>
+
+</body>
+</html>
